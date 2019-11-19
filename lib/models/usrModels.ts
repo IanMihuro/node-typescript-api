@@ -13,13 +13,15 @@ export const userSchema = new Schema({
   },
 
   email: {
-    type: String
+    type: String,
+    required: "Enter a valid Email"
   },
   phoneNumber: {
     type: String
   },
   password: {
-    type: String
+    type: String,
+    required: "Enter a password"
   },
   location: [
     {
